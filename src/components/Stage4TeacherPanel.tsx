@@ -747,10 +747,12 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-100 gap-3">
             <div>
               <h3 className="text-base font-bold text-slate-900">
-                Struktur &amp; Bank Soal Matematika TKA ({questions.length} Butir)
+                Struktur &amp; Bank Soal {CONFIG.MATA_PELAJARAN} ({questions.length} Butir)
               </h3>
               <p className="text-xs text-slate-500">
-                18 Soal Pilihan Ganda, 3 Soal Pilihan Ganda Kompleks, 9 Soal PGK Kategori
+                {questions.filter((q) => q.type === 'pg').length} Soal Pilihan Ganda,{' '}
+                {questions.filter((q) => q.type === 'pgk').length} Soal Pilihan Ganda Kompleks,{' '}
+                {questions.filter((q) => q.type === 'pgk_kategori').length} Soal PGK Kategori
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
@@ -760,17 +762,17 @@ export const Stage4TeacherPanel: React.FC<Stage4TeacherPanelProps> = ({
                   onClick={() => {
                     if (
                       confirm(
-                        'Kembalikan seluruh bank soal ke 30 butir standar (18 PG, 3 PGK, 9 PGK Kategori)?'
+                        `Kembalikan seluruh bank soal ke 25 butir standar (15 PG, 5 PGK, 5 PGK Kategori)?`
                       )
                     ) {
                       onResetDefaultQuestions();
                     }
                   }}
                   className="inline-flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors border border-slate-300 cursor-pointer"
-                  title="Reset seluruh soal ke 30 butir standar Kurikulum Merdeka"
+                  title="Reset seluruh soal ke 25 butir standar Kurikulum Merdeka"
                 >
                   <RotateCcw className="w-3.5 h-3.5 text-slate-600" />
-                  <span>Reset ke 30 Soal Standar</span>
+                  <span>Reset ke 25 Soal Standar</span>
                 </button>
               )}
               <button

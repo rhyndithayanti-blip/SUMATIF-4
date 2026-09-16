@@ -1,6 +1,6 @@
 {
   "name": "Remix Tes Sumatif kelas 4",
-  "description": "Aplikasi Tes Sumatif Matematika TKA Kelas VI SD Negeri 3 Loloan Timur dengan 4 tahap tes, sinkronisasi Google Spreadsheet, unduh PDF naskah \u0026 hasil tes, serta panel guru.",
+  "description": "Aplikasi Tes Sumatif Bahasa Indonesia Kelas IV SD Negeri 3 Loloan Timur (Ide Pokok, Homonim, Awalan Me-, Kalimat Majemuk) dengan sinkronisasi Google Spreadsheet, unduh PDF naskah & hasil tes, serta panel guru.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

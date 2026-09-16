@@ -440,7 +440,7 @@ export const GAS_SCRIPT_TEMPLATE = `/**
  *
  * PANDUAN PEMASANGAN (HANYA 2 MENIT):
  * 1. Buat Spreadsheet baru di https://sheets.new
- * 2. Beri nama: "Rekap Nilai Tes Sumatif Matematika Sekolah Dasar"
+ * 2. Beri nama: "Rekap Nilai Tes Sumatif Bahasa Indonesia SD Negeri 3 Loloan Timur"
  * 3. Buka menu "Ekstensi" -> "Apps Script"
  * 4. Hapus semua kode default, lalu salin dan tempel SELURUH KODE di bawah ini
  * 5. Klik "Simpan" (ikon disket)

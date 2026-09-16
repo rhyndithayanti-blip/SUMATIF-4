@@ -4,16 +4,16 @@
  */
 
 export const CONFIG = {
-  SEKOLAH: "SEKOLAH DASAR",
-  ALAMAT_SEKOLAH: "Jembrana",
+  SEKOLAH: "SD NEGERI 3 LOLOAN TIMUR",
+  ALAMAT_SEKOLAH: "Loloan Timur, Kec. Jembrana, Kab. Jembrana",
   KOTA: "Jembrana",
-  KELAS: "VI",
-  MATA_PELAJARAN: "MATEMATIKA",
-  MATERI: "TKA (Tes Kemampuan Akademik)",
-  GURU: "........................................",
-  NIP_GURU: "........................................",
-  KEPALA_SEKOLAH: "........................................",
-  NIP_KEPALA_SEKOLAH: "........................................",
+  KELAS: "IV",
+  MATA_PELAJARAN: "BAHASA INDONESIA",
+  MATERI: "Ide Pokok, Homonim, Awalan Me-, & Kalimat Majemuk",
+  GURU: "MADE RIRIN PRADITHA YANTI, S.Pd",
+  NIP_GURU: "199104212020122008",
+  KEPALA_SEKOLAH: "SUSILO FITRI YATMOKO, M.Pd",
+  NIP_KEPALA_SEKOLAH: "198805212011011010",
   KKTP: 70,
   ADMIN_PASSWORD: "GURUADMIN",
   

@@ -82,10 +82,10 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
       {/* Header Pengumuman Tes */}
       <div className="text-center mb-8">
         <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-          Tes Sumatif Matematika Kelas {CONFIG.KELAS}
+          Tes Sumatif {CONFIG.MATA_PELAJARAN} Kelas {CONFIG.KELAS}
         </h2>
         <p className="mt-2 text-sm text-slate-600 max-w-xl mx-auto">
-          Materi Pokok: <span className="font-semibold text-slate-800">{CONFIG.MATERI}</span>.
+          {CONFIG.SEKOLAH} • Materi: <span className="font-semibold text-slate-800">{CONFIG.MATERI}</span>.
           Silakan lengkapi identitas Anda dengan benar sebelum memulai pengerjaan soal.
         </p>
       </div>
@@ -255,19 +255,19 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
             <div className="space-y-2 text-xs">
               <div className="flex items-center justify-between bg-slate-800/80 p-2.5 rounded-lg border border-slate-700">
                 <span>1. Pilihan Ganda (PG)</span>
-                <span className="font-bold text-blue-300">18 Butir</span>
+                <span className="font-bold text-blue-300">15 Butir</span>
               </div>
               <div className="flex items-center justify-between bg-slate-800/80 p-2.5 rounded-lg border border-slate-700">
                 <span>2. Pilihan Ganda Kompleks (PGK)</span>
-                <span className="font-bold text-emerald-300">3 Butir</span>
+                <span className="font-bold text-emerald-300">5 Butir</span>
               </div>
               <div className="flex items-center justify-between bg-slate-800/80 p-2.5 rounded-lg border border-slate-700">
                 <span>3. PGK Kategori (Benar / Salah)</span>
-                <span className="font-bold text-amber-300">9 Butir</span>
+                <span className="font-bold text-amber-300">5 Butir</span>
               </div>
               <div className="flex items-center justify-between pt-2 border-t border-slate-800 text-slate-300">
                 <span>Total Butir Soal:</span>
-                <span className="font-extrabold text-white text-sm">30 Soal</span>
+                <span className="font-extrabold text-white text-sm">25 Soal</span>
               </div>
             </div>
 
@@ -278,7 +278,7 @@ export const Stage1Identity: React.FC<Stage1IdentityProps> = ({
               </p>
               <p className="flex items-start gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
-                <span>Seluruh 30 soal wajib dijawab sebelum jawaban dapat dikirimkan ke server.</span>
+                <span>Seluruh 25 soal wajib dijawab sebelum jawaban dapat dikirimkan ke server.</span>
               </p>
             </div>
           </div>
